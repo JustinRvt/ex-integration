@@ -1,0 +1,44 @@
+/* =======================
+    -- Template : Groxi
+    - Author : Justin Ravat
+    - Version : 1.0
+    - Website : githubpages.io
+=========================*/
+
+/* ------------ 
+    MENU
+---------------
+
+00. IMPORT FONTS
+
+01. GENERAL
+
+02. HELPERS
+
+03. NAVBAR
+
+04. HEADER
+*/
+
+/*===============
+OO. IMPORT FONTS
+=================*/
+/* Les imports sont TOUJOURS au début du fichier CSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*===============
+O1. GENERAL
+=================*/
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*===============
+O2. HELPERS
+=================*/
+
+.flex {
+  display: flex;
+}
+

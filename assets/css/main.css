@@ -30,6 +30,11 @@ OO. IMPORT FONTS
 O1. GENERAL
 =================*/
 
+html {
+    --primary-color: #a0cb23;
+    --secondary-color: #14462d;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -40,5 +45,46 @@ O2. HELPERS
 
 .flex {
   display: flex;
+  /* par défaut, display:flex prend la valeur row à flex-direction */
+  flex-direction: row;
 }
 
+
+/*===============
+O3. NAVBAR
+=================*/
+
+nav ul {
+    /* Je supprime les points devant les puces */
+    list-style-type: none;
+}
+
+nav a {
+    color:black;
+    /* Je supprime le soulignage des liens dans toute la nav */
+    text-decoration: none;
+}
+
+/*  Je sélectionne les liens dans le dernier élément de type ul de ma nav */
+nav ul:last-of-type a {
+    color:var(--primary-color);
+    background: white;
+    border-radius: 50%;
+    padding:0.5em;
+    margin:0.5em;
+}
+
+nav ul:last-of-type span {
+    background:var(--secondary-color);
+    border-radius: 50%;
+    color:#fff;
+    padding:0.5em 1em;
+    font-size:0.5em;
+}
+
+
+
+/* A des fins de développement, je mets un background temporaire */
+header {
+    background:#cacaca;
+}

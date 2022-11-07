@@ -14,6 +14,7 @@
 01. GENERAL
 
 02. HELPERS
+        02.01 - Flexbox
 
 03. NAVBAR
 
@@ -37,22 +38,46 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background:url("../img/bg_fruit.png");
+  background-repeat: no-repeat;
 }
 
 /*===============
 O2. HELPERS
 =================*/
 
+/* 02.01 FLEXBOX */
 .flex {
   display: flex;
   /* par défaut, display:flex prend la valeur row à flex-direction */
   flex-direction: row;
 }
 
+.relative {
+    position:relative;
+}
 
+.absolute {
+    position:absolute;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
 /*===============
 O3. NAVBAR
 =================*/
+nav {
+    margin: 2em 15%;
+}
 
 nav ul {
     /* Je supprime les points devant les puces */
@@ -70,7 +95,7 @@ nav ul:last-of-type a {
     color:var(--primary-color);
     background: white;
     border-radius: 50%;
-    padding:0.5em;
+    padding:0.5em   0.7em;
     margin:0.5em;
 }
 
@@ -82,10 +107,21 @@ nav ul:last-of-type span {
     font-size:0.5em;
 }
 
+/* Positionnement de la bulle de notifications */
 
-
-
-/* A des fins de développement, je mets un background temporaire */
-header {
-    background:#e2e2e2;
+nav ul:last-of-type li:last-of-type span {
+    top:0;
 }
+
+/* On définit une taille minimum à notre menu pour que space-around puisse fonctionner */
+
+nav ul:first-of-type {
+    min-width:50%;
+}
+
+
+
+
+
+
+

@@ -78,13 +78,14 @@ nav ul:last-of-type span {
     background:var(--secondary-color);
     border-radius: 50%;
     color:#fff;
-    padding:0.5em 1em;
+    padding:0.5em 0.8em;
     font-size:0.5em;
 }
 
 
 
+
 /* A des fins de développement, je mets un background temporaire */
 header {
-    background:#cacaca;
+    background:#e2e2e2;
 }

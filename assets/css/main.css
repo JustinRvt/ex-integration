@@ -31,6 +31,10 @@ OO. IMPORT FONTS
 O1. GENERAL
 =================*/
 
+h1 {
+    width:12em;margin:auto;
+}
+
 html {
     --primary-color: #a0cb23;
     --secondary-color: #14462d;
